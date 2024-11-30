@@ -1,0 +1,535 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header{
+    display: flex;
+    padding: 0px;
+}
+/*logo img{
+    width: 500px;
+    height: 500px;*/
+
+}
+
+/* Navigation Bar */
+header nav {
+/*    background-color: #333;*/
+    padding: 10px 20px;
+    text-align: right;
+    margin-left: -700px;
+    color: black;
+    margin-top: -50px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 50px;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img4.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Overlay Text */
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.overlay-text p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.search-field label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+.search-field input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.search-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.search-button:hover {
+    background-color: #e60000;
+}
+.text-style{
+    text-align: center;
+    margin: 40px;
+    padding: 30px;
+    font-style: italic;
+
+}
+
+/* Content Boxes Layout */
+#container {
+
+/*    background-image: url(image.jpg);*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    gap: 20px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+
+.box1 {
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+    margin-top: -50px;
+    margin-right: 900px;
+}
+.box2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+    margin-top: -50px;
+    margin-left: -850px;
+
+}
+.box3{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+    margin-top: -50px;
+    margin-left: -400px;
+}
+
+img {
+    width: 50px; /* Ensures the images are responsive */
+    height: auto;
+    max-width: 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack the boxes on small screens */
+    }
+
+    .overlay-text h1 {
+        font-size: 32px;
+
+    }
+
+    .overlay-text p {
+        font-size: 18px;
+    }
+}
+    .overlay-image p {
+        font-size: 18px;
+ }
+
+    .box button 1,2,3{
+        background-color: #ff6347;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 5px;
+} 
+.page3{
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    font-style: italic;
+}
+#container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    gap: 20px;
+    padding: 30px;
+    margin-top: 50px;
+}
+.box4{
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+    /*margin-top: -100px;
+    margin-right: -400px;*/
+}
+.box5{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+   /* margin-top: -380px;
+    margin-left: 500px;*/
+}
+.box6{
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+   /* margin-top: -280px;
+    margin-left: 950px;*/
+}
+.box4, .box5, .box6 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+    position: relative;
+}
+.box4 {
+    margin-top: -100px;
+    margin-right: -400px;
+}
+
+.box5 {
+    margin-top: -400px;
+    margin-left: 500px;
+}
+
+.box6 {
+    margin-top: -450px;
+    margin-left: 950px;
+}
+
+.box-image {
+    width: 100%; /* Make the image take up the full width of the box */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 350px; /* Optional: Set a maximum width */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 15px;
+/*    border-radius: px;*/
+}
+.page4{
+     text-align: center;
+    margin: 50px;
+    padding: 30px;
+    font-style: italic;
+
+/*#container3{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+gap: 20px;
+padding: 30px;
+margin-top: 50px;
+}
+
+.box7{
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+    /*margin-top: -100px;
+    margin-right: -400px;*/
+}
+.box8{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+  /*  margin-top: -380px;
+    margin-left: 500px;*/
+}
+.box9{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+   /* margin-top: -280px;
+    margin-left: 950px;*/
+}
+.box7, .box8, .box9{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    color: black;
+    position: relative;
+}
+.box7 {
+    margin-top: -100px;
+    margin-right: -400px;
+}
+
+.box8{
+    margin-top: -580px;
+    margin-left: 500px;
+}
+
+.box9{
+    margin-top: -650px;
+    margin-left: 950px;
+}
+.box-image2 {
+    width: 100%; /* Make the image take up the full width of the box */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 350px; /* Optional: Set a maximum width */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Form Section */
+.contact-form-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-container p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e60000;
+}
+
+/* Responsive Design for Form */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h1 {
+        font-size: 24px;
+    }
+
+    .form-container p {
+        font-size: 14px;
+    }
+}
+
+
